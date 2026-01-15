@@ -55,4 +55,4 @@ All labs are for **educational purposes only**. No real production data is used.
 ---
 
 ## 📌 Author
-Created by *[pompasta]*  
+Created by *[pombasta]*  
