@@ -3,121 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <title>Alert Triage Report</title>
+
   <style>
-  body {
-    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-    margin: 0;
-    background-color: #0f172a;
-    color: #e5e7eb;
-  }
+    body {
+      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+      margin: 0;
+      background-color: #0f172a;
+      color: #e5e7eb;
+    }
 
-  header {
-    background-color: #020617;
-    padding: 20px 40px;
-    border-bottom: 3px solid #2563eb;
-  }
+    header {
+      background-color: #020617;
+      padding: 20px 40px;
+      border-bottom: 3px solid #2563eb;
+    }
 
-  header h1 {
-    margin: 0;
-    color: #38bdf8;
-  }
+    header h1 {
+      margin: 0;
+      color: #38bdf8;
+    }
 
-  main {
-    padding: 40px;
-  }
+    main {
+      padding: 40px;
+    }
 
-  .box {
-    background-color: #020617;
-    border: 1px solid #1e293b;
-    border-left: 5px solid #2563eb;
-    padding: 20px;
-    margin-bottom: 25px;
-    border-radius: 6px;
-  }
+    .box {
+      background-color: #020617;
+      border: 1px solid #1e293b;
+      border-left: 5px solid #2563eb;
+      padding: 20px;
+      margin-bottom: 25px;
+      border-radius: 6px;
+    }
 
-  h2 {
-    color: #38bdf8;
-    margin-top: 0;
-  }
+    h2 {
+      color: #38bdf8;
+      margin-top: 0;
+    }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
 
-  th, td {
-    border: 1px solid #1e293b;
-    padding: 10px;
-    text-align: left;
-  }
+    th, td {
+      border: 1px solid #1e293b;
+      padding: 10px;
+      text-align: left;
+    }
 
-  th {
-    background-color: #020617;
-    color: #38bdf8;
-  }
+    th {
+      background-color: #020617;
+      color: #38bdf8;
+    }
 
-  footer {
-    text-align: center;
-    padding: 20px;
-    color: #94a3b8;
-    font-size: 14px;
-  }
-</style>
-
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+  </style>
 </head>
-  <div class="box">
-  <h2>MITRE ATT&CK Mapping</h2>
-  <table border="1" cellpadding="8" cellspacing="0">
-    <tr>
-      <th>Tactic</th>
-      <th>Technique ID</th>
-      <th>Technique Name</th>
-    </tr>
-    <tr>
-      <td>Credential Access</td>
-      <td>T1110</td>
-      <td>Brute Force</td>
-    </tr>
-    <tr>
-      <td>Initial Access</td>
-      <td>T1078</td>
-      <td>Valid Accounts</td>
-    </tr>
-  </table>
-</div>
 
 <body>
 
-<h1>🚨 Alert Triage Report</h1>
+<header>
+  <h1>🚨 Alert Triage Report</h1>
+</header>
 
-<div class="box">
-  <h2>Alert Summary</h2>
-  <p>Multiple failed login attempts followed by a successful login from an unfamiliar IP address.</p>
-</div>
+<main>
 
-<div class="box">
-  <h2>Analysis</h2>
-  <ul>
-    <li>Repeated authentication failures detected</li>
-    <li>Successful login after failures</li>
-    <li>External IP address with no prior association</li>
-  </ul>
-</div>
+  <div class="box">
+    <h2>Alert Summary</h2>
+    <p>
+      Multiple failed login attempts followed by a successful login
+      from an unfamiliar IP address.
+    </p>
+  </div>
 
-<div class="box">
-  <h2>Verdict</h2>
-  <p><strong>True Positive</strong> – Suspicious authentication activity.</p>
-</div>
-
-<div class="box">
-  <h2>Next Actions</h2>
-  <ul>
-    <li>Escalate to Tier 2 SOC</li>
-    <li>Reset user credentials</li>
-    <li>Monitor for further suspicious activity</li>
-  </ul>
-</div>
-
-</body>
-</html>
+  <div class="box">
+    <h2>Analysis</h2>
+    <ul>
+      <li>Repeated authentication failures detected</li>
+      <li>Successful login after failures</li>
+      <li>External IP addres
