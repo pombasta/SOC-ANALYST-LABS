@@ -82,5 +82,8 @@ The SOC team requested packet-level analysis to determine whether the activity i
 
 ---
 
-## 🖥 HTML Report
-➡️ [View Interactive HTML Report](report.html)
+## 🖥 Interactive HTML Report
+
+➡️ Open the report using HTMLPreview:  
+https://htmlpreview.github.io/?https://github.com/pombasta/SOC-ANALYST-LABS/blob/main/labs/network-analysis/report.html
+
