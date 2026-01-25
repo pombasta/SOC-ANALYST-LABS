@@ -41,3 +41,11 @@ The alert was classified as a **True Positive**. The incident requires escalatio
 - Critical thinking
 - Incident classification
 - SOC Level 1 workflow
+## MITRE ATT&CK Mapping
+
+| Tactic              | Technique ID | Technique Name |
+|---------------------|-------------|----------------|
+| Credential Access   | T1110       | Brute Force    |
+| Initial Access      | T1078       | Valid Accounts |
+## SOC Analyst Perspective
+Mapping alerts to MITRE ATT&CK helps prioritize incidents, understand attacker behavior, and determine appropriate response actions.
