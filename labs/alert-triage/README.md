@@ -49,3 +49,5 @@ The alert was classified as a **True Positive**. The incident requires escalatio
 | Initial Access      | T1078       | Valid Accounts |
 ## SOC Analyst Perspective
 Mapping alerts to MITRE ATT&CK helps prioritize incidents, understand attacker behavior, and determine appropriate response actions.
+### 🌐 Interactive HTML Report
+👉 https://htmlpreview.github.io/?https://github.com/pombasta/SOC-ANALYST-LABS/blob/main/labs/alert-triage/report.html
