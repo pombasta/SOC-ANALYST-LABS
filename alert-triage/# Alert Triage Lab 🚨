@@ -1,0 +1,74 @@
+## 🧠 Lab Overview
+
+This lab simulates the role of a SOC Analyst receiving and investigating a security alert.
+The objective is to analyze the alert, determine its severity, and decide whether it represents a true security incident or a false positive.
+
+---
+
+## 🎯 Objective
+
+- Understand the alert triage process
+- Analyze alert details
+- Decide if the alert is a True Positive or False Positive
+- Practice SOC-level decision making
+
+---
+
+## 🚨 Alert Information
+
+- Alert Type: Suspicious Login Activity
+- Source: SIEM
+- Severity: Medium
+- Description:
+  Multiple failed login attempts followed by a successful login from the same IP address.
+
+---
+
+## 🔍 Investigation Steps
+
+1. Reviewed alert details provided by the SIEM
+2. Checked the number of failed login attempts
+3. Analyzed the source IP address
+4. Reviewed login success timing
+5. Assessed user behavior patterns
+
+---
+
+## 📊 Analysis
+
+- Multiple failed login attempts may indicate brute-force activity
+- Successful login after failures increases suspicion
+- No previous history of suspicious activity from the user
+- IP address was not flagged as malicious
+
+---
+
+## ✅ Verdict
+
+- Classification: **Suspicious Activity**
+- Status: **False Positive**
+- Reason:
+  The activity was consistent with a user mistyping credentials before successfully logging in.
+
+---
+
+## 🛡️ SOC Response
+
+- Close alert with documentation
+- No escalation required
+- Continue monitoring for repeated behavior
+
+---
+
+## 🧬 MITRE ATT&CK Mapping
+
+- Technique: T1110 – Brute Force
+- Tactic: Credential Access
+
+---
+
+## 📚 Key Takeaways
+
+- Not all suspicious alerts are incidents
+- Context is critical in alert triage
+- Proper documentation is essential for SOC operations
