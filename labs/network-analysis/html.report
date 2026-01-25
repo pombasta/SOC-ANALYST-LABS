@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Network Traffic Analysis Report</title>
+
+<style>
+body {
+  font-family: Segoe UI, Tahoma, sans-serif;
+  background: #0b1120;
+  color: #e5e7eb;
+  margin: 0;
+}
+
+header {
+  background: #020617;
+  padding: 25px 40px;
+  border-bottom: 3px solid #22c55e;
+}
+
+header h1 {
+  margin: 0;
+  color: #22c55e;
+}
+
+main {
+  padding: 40px;
+}
+
+.section {
+  background: #020617;
+  border-left: 5px solid #22c55e;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+}
+
+h2 {
+  color: #22c55e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #1e293b;
+  padding: 10px;
+}
+
+th {
+  background: #020617;
+  color: #22c55e;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>🌐 Network Traffic Analysis Report</h1>
+</header>
+
+<main>
+
+<div class="section">
+<h2>Traffic Overview</h2>
+<p>
+Total Packets: <strong>18,462</strong><br>
+Capture Duration: <strong>12 minutes</strong><br>
+Internal Host: <strong>192.168.1.23</strong>
+</p>
+<img src="screenshots/wireshark-overview.png" alt="Wireshark Overview">
+</div>
+
+<div class="section">
+<h2>Suspicious Activity</h2>
+<p>
+Repeated outbound connections to external IP <strong>185.203.116.45</strong>
+were observed at regular intervals.
+</p>
+<img src="screenshots/suspicious-ip.png" alt="Suspicious IP Traffic">
+</div>
+
+<div class="section">
+<h2>DNS Analysis</h2>
+<p>
+High-frequency DNS queries to the same domain indicate beaconing behavior.
+</p>
+<img src="screenshots/dns-traffic.png" alt="DNS Traffic">
+</div>
+
+<div class="section">
+<h2>MITRE ATT&CK Mapping</h2>
+<table>
+<tr>
+<th>Tactic</th>
+<th>Technique</th>
+<th>ID</th>
+</tr>
+<tr>
+<td>Command and Control</td>
+<td>Application Layer Protocol</td>
+<td>T1071</td>
+</tr>
+<tr>
+<td>Exfiltration</td>
+<td>Exfiltration Over C2 Channel</td>
+<td>T1041</td>
+</tr>
+</table>
+</div>
+
+<div class="section">
+<h2>Verdict</h2>
+<p><strong>True Positive</strong> – Malicious outbound communication detected.</p>
+</div>
+
+<div class="section">
+<h2>Response Actions</h2>
+<ul>
+<li>Block destination IP</li>
+<li>Isolate affected endpoint</li>
+<li>Escalate to Incident Response</li>
+</ul>
+</div>
+
+</main>
+
+<footer>
+SOC Analyst Network Analysis Lab – Portfolio Project
+</footer>
+
+</body>
+</html>
