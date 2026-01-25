@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alert Triage Report</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    h1, h2 {
+      color: #1f2937;
+    }
+    .box {
+      background: #ffffff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🚨 Alert Triage Report</h1>
+
+<div class="box">
+  <h2>Alert Summary</h2>
+  <p>Multiple failed login attempts followed by a successful login from an unfamiliar IP address.</p>
+</div>
+
+<div class="box">
+  <h2>Analysis</h2>
+  <ul>
+    <li>Repeated authentication failures detected</li>
+    <li>Successful login after failures</li>
+    <li>External IP address with no prior association</li>
+  </ul>
+</div>
+
+<div class="box">
+  <h2>Verdict</h2>
+  <p><strong>True Positive</strong> – Suspicious authentication activity.</p>
+</div>
+
+<div class="box">
+  <h2>Next Actions</h2>
+  <ul>
+    <li>Escalate to Tier 2 SOC</li>
+    <li>Reset user credentials</li>
+    <li>Monitor for further suspicious activity</li>
+  </ul>
+</div>
+
+</body>
+</html>
